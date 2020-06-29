@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AEAA,OAAO,CAAC,oHAAI",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/utils/_variables.scss",
+        "../scss/utils/_fonts.scss",
+        "../scss/utils/_mixins.scss",
+        "../scss/base/_normalize.scss",
+        "../scss/base/_global.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
