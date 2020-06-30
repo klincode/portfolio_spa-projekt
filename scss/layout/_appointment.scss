@@ -1,0 +1,17 @@
+.appointment {
+  display: flex;
+
+  .appointment-img {
+    background-image: url(../../img/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid red;
+    flex-basis: 50%;
+  }
+
+  .appointment-form {
+    background-color: $primary;
+    flex-basis: 50%;
+  }
+
+}

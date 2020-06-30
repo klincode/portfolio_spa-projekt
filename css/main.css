@@ -1,2 +1,214 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+form > *,
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.banner p:first-child,
+.about figcaption,
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bellota', cursive;
+}
+
+section,
+.appointment {
+  min-height: 50vh;
+}
+
+.hamburger {
+  display: none;
+  color: #fff !important;
+  font-size: 1.6rem;
+  margin-left: auto;
+  padding: 5px;
+  cursor: pointer;
+}
+
+header .hamburger {
+  color: #1ba4ce;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .logo {
+  width: 100px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 20px 33px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-align: center;
+  display: block;
+  color: #1e2528;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #1ba4ce;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #1ba4ce;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    border: 1px solid green;
+    width: 80%;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0;
+    background-color: red;
+    width: 100%;
+  }
+  nav ul li a {
+    border: 1px solid green;
+    color: #fff;
+    width: 100%;
+  }
+  nav ul li a:hover {
+    width: 100%;
+    color: #1ba4ce;
+    background-color: #fff;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service .s-item {
+  position: relative;
+  -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%;
+  height: 350px;
+}
+
+.service .s-item > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service .s-item .s-item-hover {
+  opacity: 0;
+}
+
+.service .s-item .s-item-hover > img {
+  height: 30px;
+}
+
+.service .s-item:hover .s-item-hover {
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1ba4ce;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.service .s-item:hover .s-item-hover > * {
+  color: #fff;
+}
+
+.appointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.appointment .appointment-img {
+  background-image: url(../../img/contact-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid red;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.appointment .appointment-form {
+  background-color: #1ba4ce;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.contact {
+  background-color: #1ba4ce;
+}
+
+.btn {
+  min-width: 170px;
+  height: 50px;
+  background-color: #1ba4ce;
+  color: #fff;
+  padding: 20px 33px;
+  text-decoration: none;
+}
+
+.btn-rectangle i {
+  margin-left: 10px;
+}
 /*# sourceMappingURL=main.css.map */
