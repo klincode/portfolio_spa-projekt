@@ -2,7 +2,7 @@ header {
   // margin-top: 82px;
   background-image: url(../../img/header-bg.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: right, 0;
   background-size: contain;
   min-height: 80vh;
   position: relative;
@@ -10,6 +10,13 @@ header {
   .logo {
     margin-top: 10px;
     width: 80px;
+  }
+
+  .bg-image {
+    position: absolute;
+    top: 200px;
+    left: -40px;
+    width: 11%;
   }
 
   nav {

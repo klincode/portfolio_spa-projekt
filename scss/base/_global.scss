@@ -12,6 +12,16 @@ form>*,
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  color: $dark;
+}
+
+p {
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.8rem;
+  padding: 20px 0;
+  // margin-block-start: 0;
+  // margin-block-end: 0;
 }
 
 .banner p:first-child,
@@ -22,6 +32,7 @@ h3,
 h4 {
   font-family: 'Bellota', cursive;
   color: $secondary;
+  padding: 20px 0;
 }
 
 a {
@@ -31,7 +42,7 @@ a {
 section,
 .appointment {
   min-height: 50vh;
-
+  padding: 60px 10px;
 }
 
 .container {

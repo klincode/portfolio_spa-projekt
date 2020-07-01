@@ -14,6 +14,14 @@ form > *,
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  color: #555;
+}
+
+p {
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.8rem;
+  padding: 20px 0;
 }
 
 .banner p:first-child,
@@ -24,6 +32,7 @@ h3,
 h4 {
   font-family: 'Bellota', cursive;
   color: #473452;
+  padding: 20px 0;
 }
 
 a {
@@ -33,6 +42,7 @@ a {
 section,
 .appointment {
   min-height: 50vh;
+  padding: 60px 10px;
 }
 
 .container {
@@ -52,7 +62,7 @@ section,
 header {
   background-image: url(../../img/header-bg.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: right, 0;
   background-size: contain;
   min-height: 80vh;
   position: relative;
@@ -61,6 +71,13 @@ header {
 header .logo {
   margin-top: 10px;
   width: 80px;
+}
+
+header .bg-image {
+  position: absolute;
+  top: 200px;
+  left: -40px;
+  width: 11%;
 }
 
 header nav {
@@ -147,6 +164,70 @@ header nav ul li a:hover {
   }
 }
 
+.banner p:first-child {
+  padding: 32px 0;
+  color: #555;
+}
+
+.banner .banner-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50%;
+  padding: 0 20px;
+}
+
+.banner .banner-content p {
+  width: 70%;
+  color: #555;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.banner .banner-content a:last-child {
+  color: #555;
+}
+
+.banner h1 {
+  width: 70%;
+  color: #1e2528;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.banner .play-icon {
+  border: 1px solid #473452;
+  border-radius: 50%;
+  color: #473452;
+  font-size: 1rem;
+  padding: 14px;
+  margin-right: 15px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about figure {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.about figure img {
+  max-width: 50%;
+}
+
+.about figcaption {
+  padding: 32px 0;
+}
+
+.contact {
+  background-color: #1ba4ce;
+}
+
 .service {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,6 +286,67 @@ header nav ul li a:hover {
   color: #fff;
 }
 
+.procedures {
+  text-align: center;
+}
+
+.procedures p:first-child {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.procedures .procedure-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.procedures .procedure-items .p-item {
+  -webkit-box-shadow: 0 0 30px -15px #555;
+          box-shadow: 0 0 30px -15px #555;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 10px;
+  padding-bottom: 50px;
+}
+
+.procedures .procedure-items .p-item p {
+  padding: 0px 10px 0 10px;
+  margin-bottom: 30px;
+}
+
+.procedures .procedure-items .p-item img {
+  padding-top: 10px;
+  width: 320px;
+}
+
+.team {
+  text-align: center;
+}
+
+.team .team-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.team .team-items .t-item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  border: 1px solid red;
+}
+
 .appointment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,52 +366,6 @@ header nav ul li a:hover {
   background-color: #1ba4ce;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-}
-
-.contact {
-  background-color: #1ba4ce;
-}
-
-.about figcaption {
-  padding: 32px 0;
-}
-
-.banner p:first-child {
-  padding: 32px 0;
-  color: #555;
-}
-
-.banner .banner-content {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 50%;
-}
-
-.banner .banner-content p {
-  width: 70%;
-  color: #555;
-  letter-spacing: 1px;
-  font-weight: 300;
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
-
-.banner h1 {
-  width: 70%;
-  color: #1e2528;
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-.banner .play-icon {
-  border: 1px solid #473452;
-  border-radius: 50%;
-  color: #473452;
-  font-size: 1rem;
-  padding: 14px;
-  margin-right: 15px;
 }
 
 .btn {
@@ -298,7 +394,7 @@ header nav ul li a:hover {
 }
 
 .btn-dark {
-  background-color: #1e2528;
+  background-color: #555;
   color: #fff;
 }
 

@@ -1,4 +1,15 @@
 .about {
+  text-align: center;
+
+  figure {
+    width: 150px;
+    margin: 0 auto;
+
+    img {
+      max-width: 50%;
+    }
+  }
+
   figcaption {
     padding: 32px 0;
   }
