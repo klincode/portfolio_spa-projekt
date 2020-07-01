@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body,
 form>*,
 p {
@@ -23,6 +28,12 @@ section,
 .appointment {
   min-height: 50vh;
 
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 .hamburger {

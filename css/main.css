@@ -4,6 +4,11 @@
           box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body,
 form > *,
 p {
@@ -26,6 +31,12 @@ section,
   min-height: 50vh;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
 .hamburger {
   display: none;
   color: #fff !important;
@@ -35,28 +46,33 @@ section,
   cursor: pointer;
 }
 
-header .hamburger {
-  color: #1ba4ce;
+header {
+  margin-top: 82px;
+  padding: 0 20px;
 }
 
-nav {
+header .logo {
+  width: 80px;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
+  background-color: #fff;
+  width: 100%;
 }
 
-nav .logo {
-  width: 100px;
-}
-
-nav ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav ul li {
+header nav ul li {
   list-style: none;
   text-transform: uppercase;
   height: 50px;
@@ -65,14 +81,14 @@ nav ul li {
   font-size: 1.06rem;
 }
 
-nav ul li a {
+header nav ul li a {
   text-align: center;
   display: block;
   color: #473452;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   color: #1ba4ce;
 }
 
@@ -89,7 +105,6 @@ nav ul li a:hover {
     text-align: center;
     border: 1px solid green;
     width: 60%;
-    position: fixed;
     right: 0;
   }
   nav ul {
@@ -122,6 +137,12 @@ nav ul li a:hover {
   }
   .hamburger {
     display: block;
+  }
+}
+
+@media (min-width: 1140px) {
+  .container {
+    max-width: 100%;
   }
 }
 
@@ -206,6 +227,22 @@ nav ul li a:hover {
 
 .contact {
   background-color: #1ba4ce;
+}
+
+.banner {
+  background-image: url(../../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  min-height: 60vh;
+  position: relative;
+}
+
+.banner .banner-content {
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  width: 30%;
 }
 
 .banner h1 {

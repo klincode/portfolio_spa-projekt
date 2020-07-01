@@ -1,40 +1,42 @@
-header .hamburger {
-  color: $primary;
-}
-
-nav {
-  display: flex;
-  z-index: 1;
+header {
+  margin-top: 82px;
+  padding: 0 20px;
 
   .logo {
-    width: 100px;
+    width: 80px;
   }
 
-  ul {
+  nav {
+    position: fixed;
+    top: 0;
     display: flex;
-    // margin-right: auto;
+    z-index: 1;
+    background-color: $light;
+    width: 100%;
 
-    li {
-      // display: block;
-      list-style: none;
-      text-transform: uppercase;
-      height: 50px;
-      // color: #fff;
-      padding: 20px 33px;
-      text-decoration: none;
-      font-size: 1.06rem;
-      ;
+    ul {
+      display: flex;
 
-      a {
 
-        text-align: center;
-        display: block;
-        color: $secondary;
+      li {
+        list-style: none;
+        text-transform: uppercase;
+        height: 50px;
+        padding: 20px 33px;
         text-decoration: none;
-      }
+        font-size: 1.06rem;
 
-      a:hover {
-        color: $primary;
+        a {
+
+          text-align: center;
+          display: block;
+          color: $secondary;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $primary;
+        }
       }
     }
   }
@@ -48,9 +50,7 @@ nav {
     text-align: center;
     border: 1px solid green;
     width: 60%;
-    position: fixed;
     right: 0;
-    ;
 
     ul {
       flex-direction: column;
@@ -84,5 +84,12 @@ nav {
 
   .hamburger {
     display: block;
+  }
+}
+
+@media (min-width:1140px) {
+  .container {
+    max-width: 100%;
+    ;
   }
 }

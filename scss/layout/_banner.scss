@@ -1,4 +1,19 @@
 .banner {
+  background-image: url(../../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  min-height: 60vh;
+  position: relative;
+
+  .banner-content {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    width: 30%;
+    // transform: translateY(-50%);
+  }
+
   h1 {
     color: $tertiary;
   }
