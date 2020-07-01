@@ -26,6 +26,10 @@ h4 {
   color: #473452;
 }
 
+a {
+  text-decoration: none;
+}
+
 section,
 .appointment {
   min-height: 50vh;
@@ -34,7 +38,6 @@ section,
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .hamburger {
@@ -47,36 +50,40 @@ section,
 }
 
 header {
-  margin-top: 82px;
-  padding: 0 20px;
+  background-image: url(../../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  min-height: 80vh;
+  position: relative;
 }
 
 header .logo {
+  margin-top: 10px;
   width: 80px;
 }
 
 header nav {
-  position: fixed;
-  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
-  background-color: #fff;
-  width: 100%;
 }
 
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav ul li {
   list-style: none;
   text-transform: uppercase;
   height: 50px;
-  padding: 20px 33px;
+  padding: 20px 30px;
   text-decoration: none;
   font-size: 1.06rem;
 }
@@ -137,12 +144,6 @@ header nav ul li a:hover {
   }
   .hamburger {
     display: block;
-  }
-}
-
-@media (min-width: 1140px) {
-  .container {
-    max-width: 100%;
   }
 }
 
@@ -229,41 +230,62 @@ header nav ul li a:hover {
   background-color: #1ba4ce;
 }
 
-.banner {
-  background-image: url(../../img/header-bg.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
-  min-height: 60vh;
-  position: relative;
+.about figcaption {
+  padding: 32px 0;
+}
+
+.banner p:first-child {
+  padding: 32px 0;
+  color: #555;
 }
 
 .banner .banner-content {
   position: absolute;
-  top: 50px;
-  left: 10%;
-  width: 30%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50%;
+}
+
+.banner .banner-content p {
+  width: 70%;
+  color: #555;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .banner h1 {
+  width: 70%;
   color: #1e2528;
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 .banner .play-icon {
+  border: 1px solid #473452;
+  border-radius: 50%;
   color: #473452;
-  font-size: 2.75rem;
+  font-size: 1rem;
+  padding: 14px;
+  margin-right: 15px;
 }
 
 .btn {
   min-width: 170px;
   background-color: #1ba4ce;
   color: #fff;
-  padding: 20px 33px;
+  padding: 15px 33px;
   text-decoration: none;
-  font-weight: 700;
   outline: none;
   line-height: 12px;
   cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.btn-rectangle {
+  margin-right: 20px;
 }
 
 .btn-rectangle i {

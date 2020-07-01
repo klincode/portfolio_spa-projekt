@@ -1,28 +1,30 @@
 header {
-  margin-top: 82px;
-  padding: 0 20px;
+  // margin-top: 82px;
+  background-image: url(../../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  min-height: 80vh;
+  position: relative;
 
   .logo {
+    margin-top: 10px;
     width: 80px;
   }
 
   nav {
-    position: fixed;
-    top: 0;
     display: flex;
     z-index: 1;
-    background-color: $light;
-    width: 100%;
 
     ul {
       display: flex;
-
+      align-items: center;
 
       li {
         list-style: none;
         text-transform: uppercase;
         height: 50px;
-        padding: 20px 33px;
+        padding: 20px 30px;
         text-decoration: none;
         font-size: 1.06rem;
 
@@ -89,7 +91,7 @@ header {
 
 @media (min-width:1140px) {
   .container {
-    max-width: 100%;
+    // max-width: 100%;
     ;
   }
 }
