@@ -18,6 +18,7 @@ h2,
 h3,
 h4 {
   font-family: 'Bellota', cursive;
+  color: #473452;
 }
 
 section,
@@ -42,6 +43,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
 }
 
 nav .logo {
@@ -55,18 +57,18 @@ nav ul {
 }
 
 nav ul li {
-  display: block;
   list-style: none;
   text-transform: uppercase;
   height: 50px;
   padding: 20px 33px;
   text-decoration: none;
+  font-size: 1.06rem;
 }
 
 nav ul li a {
   text-align: center;
   display: block;
-  color: #1e2528;
+  color: #473452;
   text-decoration: none;
 }
 
@@ -86,7 +88,9 @@ nav ul li a:hover {
             align-items: center;
     text-align: center;
     border: 1px solid green;
-    width: 80%;
+    width: 60%;
+    position: fixed;
+    right: 0;
   }
   nav ul {
     -webkit-box-orient: vertical;
@@ -101,10 +105,15 @@ nav ul li a:hover {
     background-color: red;
     width: 100%;
   }
+  nav ul li {
+    width: 100%;
+  }
   nav ul li a {
+    display: inline-block;
     border: 1px solid green;
     color: #fff;
     width: 100%;
+    line-height: 50px;
   }
   nav ul li a:hover {
     width: 100%;
@@ -199,16 +208,52 @@ nav ul li a:hover {
   background-color: #1ba4ce;
 }
 
+.banner h1 {
+  color: #1e2528;
+}
+
+.banner .play-icon {
+  color: #473452;
+  font-size: 2.75rem;
+}
+
 .btn {
   min-width: 170px;
-  height: 50px;
   background-color: #1ba4ce;
   color: #fff;
   padding: 20px 33px;
   text-decoration: none;
+  font-weight: 700;
+  outline: none;
+  line-height: 12px;
+  cursor: pointer;
 }
 
 .btn-rectangle i {
   margin-left: 10px;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+  padding: 10px 33px;
+}
+
+.btn-dark {
+  background-color: #1e2528;
+  color: #fff;
+}
+
+.btn-negative {
+  color: #473452;
+  background-color: #fff;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-negative:hover {
+  background-color: #1ba4ce;
+  color: #fff;
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=main.css.map */

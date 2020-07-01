@@ -1,11 +1,14 @@
 .btn {
   min-width: 170px;
-  height: 50px;
+  // height: 50px;
   background-color: $primary;
-  color: #fff;
+  color: $light;
   padding: 20px 33px;
   text-decoration: none;
-  ;
+  font-weight: 700;
+  outline: none;
+  line-height: 12px;
+  cursor: pointer;
 }
 
 .btn-rectangle {
@@ -16,8 +19,27 @@
 
 .btn-circle {}
 
-.btn-rounded {}
+.btn-rounded {
+  border-radius: 50px;
+  padding: 10px 33px;
+}
 
-.btn-dark {}
+.btn-dark {
+  background-color: $tertiary;
+  color: $light;
+}
 
-.btn-negative {}
+.btn-negative {
+  color: $secondary;
+  background-color: $light;
+  border: 1px solid transparent;
+
+
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $primary;
+    color: $light;
+    border: 1px solid $light
+  }
+}
