@@ -35,6 +35,10 @@ h4 {
   padding: 20px 0;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -414,6 +418,57 @@ header nav ul li a:hover {
   background-color: #1ba4ce;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.blog {
+  text-align: center;
+}
+
+.blog p:first-child {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.blog .blog-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog .blog-items h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.blog .blog-items .b-item {
+  min-width: 350px;
+  -webkit-box-shadow: 0 0 30px -15px #555;
+          box-shadow: 0 0 30px -15px #555;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 10px;
+  padding-bottom: 50px;
+}
+
+.blog .blog-items .b-item p {
+  padding: 0px 10px 0 10px;
+  margin-bottom: 30px;
+}
+
+.blog .blog-items .b-item .b-time {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.blog .blog-items .b-item img {
+  padding: 10px;
+  width: 100%;
 }
 
 .btn {
