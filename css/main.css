@@ -403,21 +403,26 @@ header nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .appointment .appointment-img {
-  background-image: url(../../img/contact-bg.jpg);
-  background-position: center;
-  background-size: cover;
+  width: 35%;
   border: 1px solid red;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
 }
 
 .appointment .appointment-form {
-  background-color: #1ba4ce;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  min-width: 350px;
+  width: 65%;
+  border: 1px solid red;
+}
+
+.appointment .appointment-form input {
+  width: 400px;
 }
 
 .blog {
@@ -469,6 +474,34 @@ header nav ul li a:hover {
 .blog .blog-items .b-item img {
   padding: 10px;
   width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+footer img {
+  max-width: 100px;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+footer nav ul li {
+  padding: 5px 20px;
+  list-style: none;
+}
+
+footer nav ul li a {
+  color: #473452;
 }
 
 .btn {

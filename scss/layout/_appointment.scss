@@ -1,17 +1,35 @@
 .appointment {
   display: flex;
+  // min-height: 70vh;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
 
   .appointment-img {
-    background-image: url(../../img/contact-bg.jpg);
-    background-position: center;
-    background-size: cover;
+    // background-image: url(../../img/contact-bg.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // // border: 1px solid red;
+    width: 35%;
+    // min-width: 350px;
     border: 1px solid red;
-    flex-basis: 50%;
+
   }
 
   .appointment-form {
-    background-color: $primary;
-    flex-basis: 50%;
+    // background-color: $primary;
+    min-width: 350px;
+    width: 65%;
+    border: 1px solid red;
+    // display: flex;
+    // flex-direction: column;
+
+    input {
+      width: 400px;
+    }
+
+
   }
 
 }

@@ -1,8 +1,12 @@
 .service {
   display: flex;
+  // flex-wrap: wrap;
+  // min-width: 1020px;
+  // justify-content: center;
 
   .s-item {
     position: relative;
+
     flex-basis: 33.333%;
     height: 350px;
 

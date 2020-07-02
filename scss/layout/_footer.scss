@@ -1,0 +1,23 @@
+footer {
+  text-align: center;
+  padding: 50px 10px;
+
+  img {
+    max-width: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    li {
+      padding: 5px 20px;
+      list-style: none;
+
+      a {
+        color: $secondary
+      }
+    }
+  }
+}
