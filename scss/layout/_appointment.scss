@@ -1,35 +1,75 @@
 .appointment {
-  display: flex;
-  // min-height: 70vh;
-  flex-wrap: wrap;
+  background-color: $primary;
+  position: relative;
 
-  justify-content: center;
+  .appointment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto;
 
 
-  .appointment-img {
-    // background-image: url(../../img/contact-bg.jpg);
-    // background-position: center;
-    // background-size: cover;
-    // // border: 1px solid red;
-    width: 35%;
-    // min-width: 350px;
-    border: 1px solid red;
+    .appointment-img {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      background-image: url(../../img/contact-bg.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 35%;
 
-  }
-
-  .appointment-form {
-    // background-color: $primary;
-    min-width: 350px;
-    width: 65%;
-    border: 1px solid red;
-    // display: flex;
-    // flex-direction: column;
-
-    input {
-      width: 400px;
     }
 
+    .appointment-form {
+      min-width: 400px;
+      width: 65%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 0px;
+      margin-left: 35%;
+
+      input,
+      select {
+        flex-basis: 40%;
+        margin: 20px 15px;
+        padding: 15px;
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.458);
+        min-width: 335px;
+        background-color: $primary;
+        color: $light;
+        outline: none;
+        text-transform: uppercase;
+
+        &::placeholder {
+          color: $light;
+        }
+      }
+
+      button {
+        font-weight: 700;
+        margin: 20px 15px;
+      }
+
+      textarea {
+        text-transform: uppercase;
+        width: 100%;
+        outline: none;
+        background-color: $primary;
+        color: $light;
+        margin: 20px 25px 20px 15px;
+        padding: 15px;
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.458);
+
+        &::placeholder {
+          color: $light;
+        }
+      }
+
+
+    }
 
   }
-
 }

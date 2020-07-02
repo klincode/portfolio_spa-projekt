@@ -9,10 +9,13 @@
   line-height: 12px;
   cursor: pointer;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .btn-rectangle {
   margin-right: 20px;
+  text-transform: capitalize;
+  ;
 
   i {
     margin-left: 10px;
@@ -21,7 +24,7 @@
 
 .btn-rounded {
   border-radius: 50px;
-  padding: 10px 33px;
+  padding: 15px 33px;
 }
 
 .btn-dark {

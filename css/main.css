@@ -43,8 +43,7 @@ a {
   text-decoration: none;
 }
 
-section,
-.appointment {
+section {
   min-height: 50vh;
   padding: 60px 10px;
 }
@@ -400,6 +399,11 @@ header nav ul li a:hover {
 }
 
 .appointment {
+  background-color: #1ba4ce;
+  position: relative;
+}
+
+.appointment .appointment-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,21 +412,98 @@ header nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-.appointment .appointment-img {
+.appointment .appointment-container .appointment-img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-image: url(../../img/contact-bg.jpg);
+  background-position: center;
+  background-size: cover;
   width: 35%;
-  border: 1px solid red;
 }
 
-.appointment .appointment-form {
-  min-width: 350px;
+.appointment .appointment-container .appointment-form {
+  min-width: 400px;
   width: 65%;
-  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 60px 0px;
+  margin-left: 35%;
 }
 
-.appointment .appointment-form input {
-  width: 400px;
+.appointment .appointment-container .appointment-form input,
+.appointment .appointment-container .appointment-form select {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin: 20px 15px;
+  padding: 15px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.458);
+  min-width: 335px;
+  background-color: #1ba4ce;
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.appointment .appointment-container .appointment-form input::-webkit-input-placeholder,
+.appointment .appointment-container .appointment-form select::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.appointment .appointment-container .appointment-form input:-ms-input-placeholder,
+.appointment .appointment-container .appointment-form select:-ms-input-placeholder {
+  color: #fff;
+}
+
+.appointment .appointment-container .appointment-form input::-ms-input-placeholder,
+.appointment .appointment-container .appointment-form select::-ms-input-placeholder {
+  color: #fff;
+}
+
+.appointment .appointment-container .appointment-form input::placeholder,
+.appointment .appointment-container .appointment-form select::placeholder {
+  color: #fff;
+}
+
+.appointment .appointment-container .appointment-form button {
+  font-weight: 700;
+  margin: 20px 15px;
+}
+
+.appointment .appointment-container .appointment-form textarea {
+  text-transform: uppercase;
+  width: 100%;
+  outline: none;
+  background-color: #1ba4ce;
+  color: #fff;
+  margin: 20px 25px 20px 15px;
+  padding: 15px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.458);
+}
+
+.appointment .appointment-container .appointment-form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.appointment .appointment-container .appointment-form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.appointment .appointment-container .appointment-form textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.appointment .appointment-container .appointment-form textarea::placeholder {
+  color: #fff;
 }
 
 .blog {
@@ -514,10 +595,12 @@ footer nav ul li a {
   line-height: 12px;
   cursor: pointer;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .btn-rectangle {
   margin-right: 20px;
+  text-transform: capitalize;
 }
 
 .btn-rectangle i {
@@ -526,7 +609,7 @@ footer nav ul li a {
 
 .btn-rounded {
   border-radius: 50px;
-  padding: 10px 33px;
+  padding: 15px 33px;
 }
 
 .btn-dark {
