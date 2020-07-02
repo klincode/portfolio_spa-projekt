@@ -1,8 +1,5 @@
 .service {
   display: flex;
-  // flex-wrap: wrap;
-  // min-width: 1020px;
-  // justify-content: center;
 
   .s-item {
     position: relative;
@@ -40,7 +37,7 @@
       transition: all 0.5s;
 
       &>* {
-        color: #fff;
+        color: $light;
       }
     }
   }

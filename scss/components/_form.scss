@@ -1,0 +1,35 @@
+textarea {
+  text-transform: uppercase;
+  width: 95%;
+  outline: none;
+  background-color: $primary;
+  color: $light;
+  margin: 20px 15px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.458);
+  text-align: left;
+
+  &::placeholder {
+    color: $light;
+  }
+}
+
+input,
+select {
+  flex-basis: 40%;
+  margin: 20px 15px;
+  padding: 15px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.458);
+  min-width: 310px;
+  background-color: $primary;
+  color: $light;
+  outline: none;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $light;
+  }
+}
