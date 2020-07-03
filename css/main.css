@@ -70,9 +70,6 @@ section {
 }
 
 header {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
   min-height: 70vh;
   position: relative;
 }
@@ -186,8 +183,8 @@ header nav ul li a:hover {
     display: block;
   }
   header nav {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(110%);
+            transform: translateX(110%);
     position: absolute;
     background-color: #1ba4ce;
     -webkit-box-orient: vertical;

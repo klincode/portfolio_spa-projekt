@@ -1,9 +1,4 @@
 header {
-  // margin-top: 82px;
-  // background-image: url(../../img/header-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
   min-height: 70vh;
   position: relative;
 
@@ -131,7 +126,7 @@ header {
     nav {
       // display: none;
       // opacity: 0;
-      transform: translateX(100%);
+      transform: translateX(110%);
       position: absolute;
       background-color: $primary;
       flex-direction: column;
