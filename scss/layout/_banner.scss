@@ -11,7 +11,7 @@
     top: 45%;
     transform: translateY(-50%);
     width: 55%;
-    min-width: 450px;
+    min-width: 350px;
     padding: 0 20px;
     max-height: 350px;
     ;
@@ -53,6 +53,25 @@
     background-color: $primary;
     color: $light;
     border-color: $light;
+
+  }
+}
+
+
+@media (max-width:$small-device) {
+  header {
+    .banner {
+      .banner-content {
+        p {
+          padding: 0;
+          margin: 0;
+          // border: 1px solid red;
+        }
+
+        padding-bottom: 10px;
+      }
+
+    }
 
   }
 }

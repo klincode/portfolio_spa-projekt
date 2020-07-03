@@ -1,6 +1,7 @@
 header {
   min-height: 70vh;
   position: relative;
+  // display: none;
 
   .nav-wrapper {
     background-color: $light;
@@ -105,13 +106,7 @@ header {
   }
 }
 
-// @media screen and (max-width:$small-device) {
 
-//     .hamburger-close {
-//       display: block;
-//     }
-//   }
-// }
 
 
 
