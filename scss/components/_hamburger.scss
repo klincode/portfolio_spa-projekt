@@ -1,0 +1,17 @@
+.hamburger,
+.hamburger-close {
+  top: 0;
+  right: 0;
+  position: absolute;
+  color: #fff !important;
+  font-size: 1.6rem;
+  margin: 10px 30px;
+  display: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.hamburger-close:hover {
+  transform: rotate(45deg);
+  border: 1px solid red;
+}

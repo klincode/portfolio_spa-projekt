@@ -38,3 +38,32 @@
 
   }
 }
+
+
+@media (max-width:$large-device) {
+  .appointment {
+    .appointment-container {
+      .appointment-form {
+        padding: 50px 10%;
+        margin-left: 0;
+        width: 100%;
+
+        &>* {
+          flex-basis: 100%;
+        }
+
+        button {
+          flex-basis: 50%;
+          margin: 50px auto;
+
+        }
+      }
+    }
+
+    .appointment-container {
+      .appointment-img {
+        display: none;
+      }
+    }
+  }
+}

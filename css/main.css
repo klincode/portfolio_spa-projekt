@@ -51,27 +51,51 @@ section {
   margin: 0 auto;
 }
 
-.hamburger {
+.hamburger,
+.hamburger-close {
+  top: 0;
+  right: 0;
+  position: absolute;
   display: none;
   color: #fff !important;
   font-size: 1.6rem;
-  margin-left: auto;
-  padding: 5px;
+  margin: 10px 30px;
+  display: none;
   cursor: pointer;
 }
 
 header {
   background-image: url(../../img/header-bg.png);
   background-repeat: no-repeat;
-  background-position: right, 0;
   background-size: contain;
+  background-position: right;
   min-height: 80vh;
   position: relative;
+}
+
+header .hamburger-close,
+header .hamburger {
+  display: none;
+  z-index: 10;
+}
+
+header nav {
+  display: block;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 header .logo {
   margin-top: 10px;
   width: 80px;
+  padding-left: 20px;
 }
 
 header .bg-image {
@@ -95,6 +119,8 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
+  margin-left: 0;
 }
 
 header nav ul li {
@@ -117,50 +143,61 @@ header nav ul li a:hover {
   color: #1ba4ce;
 }
 
-@media screen and (max-width: 768px) {
-  nav {
+@media screen and (max-width: 576px) {
+  header .hamburger-close {
+    display: block;
+  }
+  header nav {
+    position: absolute;
     background-color: #1ba4ce;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    border: 1px solid green;
-    width: 60%;
+    width: 80%;
     right: 0;
+    padding: 30px 0px;
+    -webkit-box-shadow: 0 0 30px -10px #555;
+            box-shadow: 0 0 30px -10px #555;
   }
-  nav ul {
+  header nav .hamburger {
+    display: none;
+  }
+  header nav .hamburger-close {
+    display: block;
+  }
+  header nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     padding: 0;
-    background-color: red;
     width: 100%;
   }
-  nav ul li {
+  header nav ul li {
     width: 100%;
   }
-  nav ul li a {
-    display: inline-block;
-    border: 1px solid green;
+  header nav ul li a {
+    text-align: right;
     color: #fff;
-    width: 100%;
     line-height: 50px;
+    -webkit-transition: margin 0.5s;
+    transition: margin 0.5s;
   }
-  nav ul li a:hover {
-    width: 100%;
-    color: #1ba4ce;
-    background-color: #fff;
+  header nav ul li a:hover {
+    margin-right: 15px;
+    color: #fff;
   }
-  .hamburger {
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .hamburger-close {
+    display: none;
+  }
+  header .hamburger {
     display: block;
   }
 }
@@ -172,11 +209,12 @@ header nav ul li a:hover {
 
 .banner .banner-content {
   position: absolute;
-  top: 50%;
+  top: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 50%;
   padding: 0 20px;
+  max-height: 350px;
 }
 
 .banner .banner-content p {
@@ -206,6 +244,15 @@ header nav ul li a:hover {
   font-size: 1rem;
   padding: 14px;
   margin-right: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.banner .play-icon:hover,
+.banner a:hover .play-icon {
+  background-color: #1ba4ce;
+  color: #fff;
+  border-color: #fff;
 }
 
 .about {
@@ -299,7 +346,7 @@ header nav ul li a:hover {
   position: relative;
   -ms-flex-preferred-size: 33.333%;
       flex-basis: 33.333%;
-  height: 350px;
+  max-height: 350px;
 }
 
 .service .s-item > img {
@@ -347,6 +394,28 @@ header nav ul li a:hover {
   color: #fff;
 }
 
+@media (max-width: 992px) {
+  .service {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .service .s-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .service {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .service .s-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
 .procedures {
   text-align: center;
 }
@@ -385,6 +454,14 @@ header nav ul li a:hover {
 .procedures .procedure-items .p-item img {
   padding: 10px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .procedures .procedure-items .p-item {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    margin-bottom: 50px;
+  }
 }
 
 .team {
@@ -493,6 +570,26 @@ header nav ul li a:hover {
   margin: 40px 15px;
 }
 
+@media (max-width: 992px) {
+  .appointment .appointment-container .appointment-form {
+    padding: 50px 10%;
+    margin-left: 0;
+    width: 100%;
+  }
+  .appointment .appointment-container .appointment-form > * {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .appointment .appointment-container .appointment-form button {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: 50px auto;
+  }
+  .appointment .appointment-container .appointment-img {
+    display: none;
+  }
+}
+
 .blog {
   text-align: center;
 }
@@ -544,6 +641,14 @@ header nav ul li a:hover {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .blog .blog-items .b-item {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    margin-bottom: 50px;
+  }
+}
+
 footer {
   text-align: center;
   padding: 50px 10px;
@@ -564,7 +669,7 @@ footer nav ul {
 }
 
 footer nav ul li {
-  padding: 5px 20px;
+  padding: 5px 15px;
   list-style: none;
 }
 
@@ -583,25 +688,47 @@ footer nav ul li a {
   cursor: pointer;
   letter-spacing: 1px;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn-rectangle {
   margin-right: 20px;
   text-transform: capitalize;
+  border: 1px solid transparent;
 }
 
 .btn-rectangle i {
   margin-left: 10px;
 }
 
+.btn-rectangle:hover {
+  background-color: #fff;
+  color: #1ba4ce;
+  border: 1px solid #1ba4ce;
+}
+
 .btn-rounded {
   border-radius: 50px;
   padding: 15px 33px;
+  border: 1px solid transparent;
+}
+
+.btn-rounded:hover {
+  background-color: #fff;
+  color: #1ba4ce;
+  border: 1px solid #1ba4ce;
 }
 
 .btn-dark {
   background-color: #555;
   color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #555;
 }
 
 .btn-negative {

@@ -53,11 +53,15 @@ section {
   // border: 1px solid red;
 }
 
-.hamburger {
+.hamburger,
+.hamburger-close {
+  top: 0;
+  right: 0;
+  position: absolute;
   display: none;
   color: #fff !important;
   font-size: 1.6rem;
-  margin-left: auto;
-  padding: 5px;
+  margin: 10px 30px;
+  display: none;
   cursor: pointer;
 }

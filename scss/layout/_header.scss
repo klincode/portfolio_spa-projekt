@@ -2,14 +2,47 @@ header {
   // margin-top: 82px;
   background-image: url(../../img/header-bg.png);
   background-repeat: no-repeat;
-  background-position: right, 0;
   background-size: contain;
+  background-position: right;
   min-height: 80vh;
   position: relative;
+
+  .hamburger-close,
+  .hamburger {
+    display: none;
+    z-index: 10;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    margin: 0;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 
   .logo {
     margin-top: 10px;
     width: 80px;
+    padding-left: 20px;
+    ;
+  }
+
+  .test {
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+    // height: 80vh;
+    // border: 1px solid red;
+    // width: 50%;
+    // background-image: url(../../img/header-bg.png);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+
+
   }
 
   .bg-image {
@@ -26,6 +59,8 @@ header {
     ul {
       display: flex;
       align-items: center;
+      padding: 0;
+      margin-left: 0;
 
       li {
         list-style: none;
@@ -51,54 +86,68 @@ header {
   }
 }
 
-@media screen and (max-width:768px) {
-  nav {
-    background-color: $primary;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid green;
-    width: 60%;
-    right: 0;
+@media screen and (max-width:$small-device) {
+  header {
+    .hamburger-close {
+      display: block;
+    }
 
-    ul {
+    nav {
+      position: absolute;
+      background-color: $primary;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0;
-      background-color: red;
-      width: 100%;
+      width: 80%;
+      right: 0;
+      padding: 30px 0px;
+      box-shadow: 0 0 30px -10px $dark;
 
-      li {
+      .hamburger {
+        display: none;
+      }
+
+      .hamburger-close {
+        display: block;
+      }
+
+      ul {
+        flex-direction: column;
+        padding: 0;
         width: 100%;
 
-        a {
-
-          display: inline-block;
-          border: 1px solid green;
-          color: #fff;
+        li {
           width: 100%;
-          line-height: 50px;
 
-          &:hover {
-            width: 100%;
-            color: $primary;
-            background-color: $light;
+          a {
+            text-align: right;
+            color: #fff;
+            // width: 100%;
+            line-height: 50px;
+            transition: margin 0.5s;
+
+            &:hover {
+              margin-right: 15px;
+              color: $light
+            }
           }
         }
       }
+
     }
-
-  }
-
-  .hamburger {
-    display: block;
   }
 }
 
-@media (min-width:1140px) {
-  .container {
-    // max-width: 100%;
-    ;
+@media (max-width:$medium-device) {
+  header {
+    nav {
+      display: none;
+    }
+
+    .hamburger-close {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
   }
 }

@@ -44,3 +44,16 @@
     }
   }
 }
+
+@media (max-width:$medium-device) {
+  .blog {
+
+    .blog-items {
+      .b-item {
+        flex-basis: 80%;
+        margin-bottom: 50px;
+        ;
+      }
+    }
+  }
+}
