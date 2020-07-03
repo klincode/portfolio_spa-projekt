@@ -8,15 +8,16 @@
 
   .banner-content {
     position: absolute;
-    top: 55%;
+    top: 35%;
     transform: translateY(-50%);
-    width: 50%;
+    width: 60%;
+    min-width: 450px;
     padding: 0 20px;
     max-height: 350px;
     ;
 
     p {
-      width: 70%;
+
       color: $dark;
       letter-spacing: 1px;
       font-weight: 300;
@@ -31,7 +32,7 @@
   }
 
   h1 {
-    width: 70%;
+    // width: 70%;
     color: $tertiary;
     margin: 0;
     font-size: 2.5rem;

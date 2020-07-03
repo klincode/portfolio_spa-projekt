@@ -33,6 +33,10 @@ h4 {
   padding: 20px 0;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 h4 {
   font-size: 1.2rem;
 }
@@ -51,21 +55,7 @@ section {
   margin: 0 auto;
 }
 
-.hamburger,
-.hamburger-close {
-  top: 0;
-  right: 0;
-  position: absolute;
-  display: none;
-  color: #fff !important;
-  font-size: 1.6rem;
-  margin: 10px 30px;
-  display: none;
-  cursor: pointer;
-}
-
 header {
-  background-image: url(../../img/header-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -79,8 +69,22 @@ header .hamburger {
   z-index: 10;
 }
 
+header .nav-wrapper {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
 header nav {
+  height: 80px;
   display: block;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 header .container {
@@ -96,6 +100,7 @@ header .logo {
   margin-top: 10px;
   width: 80px;
   padding-left: 20px;
+  margin-right: 50px;
 }
 
 header .bg-image {
@@ -103,6 +108,20 @@ header .bg-image {
   top: 200px;
   left: -40px;
   width: 11%;
+}
+
+header .bg-image-right {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 10;
+  width: 40%;
+}
+
+header .bg-image-right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header nav {
@@ -120,14 +139,13 @@ header nav ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  margin-left: 0;
 }
 
 header nav ul li {
   list-style: none;
   text-transform: uppercase;
   height: 50px;
-  padding: 20px 30px;
+  padding: 20px 20px;
   text-decoration: none;
   font-size: 1.06rem;
 }
@@ -202,6 +220,24 @@ header nav ul li a:hover {
   }
 }
 
+@media (max-width: 992px) {
+  header {
+    min-height: 50vh;
+  }
+  header nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .bg-image-right {
+    display: none;
+  }
+  header .banner .banner-content {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .banner p:first-child {
   padding: 32px 0;
   color: #555;
@@ -209,16 +245,16 @@ header nav ul li a:hover {
 
 .banner .banner-content {
   position: absolute;
-  top: 55%;
+  top: 35%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 50%;
+  width: 60%;
+  min-width: 450px;
   padding: 0 20px;
   max-height: 350px;
 }
 
 .banner .banner-content p {
-  width: 70%;
   color: #555;
   letter-spacing: 1px;
   font-weight: 300;
@@ -231,7 +267,6 @@ header nav ul li a:hover {
 }
 
 .banner h1 {
-  width: 70%;
   color: #1e2528;
   margin: 0;
   font-size: 2.5rem;
@@ -561,13 +596,16 @@ header nav ul li a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 60px 0px;
+  padding: 60px 0 60px 20px;
   margin-left: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .appointment .appointment-container .appointment-form button {
   font-weight: 700;
-  margin: 40px 15px;
+  margin: 40px 0px;
 }
 
 @media (max-width: 992px) {
@@ -773,15 +811,14 @@ footer nav ul li a {
 
 textarea {
   text-transform: uppercase;
-  width: 95%;
+  width: 100%;
   outline: none;
   background-color: #1ba4ce;
   color: #fff;
-  margin: 20px 15px;
   margin: 0 auto;
   padding: 15px;
   border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.458);
+  border-bottom: 1px solid #fff;
   text-align: left;
 }
 
@@ -805,10 +842,9 @@ input,
 select {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  margin: 20px 15px;
   padding: 15px;
   border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.458);
+  border-bottom: 1px solid #fff;
   min-width: 310px;
   background-color: #1ba4ce;
   color: #fff;

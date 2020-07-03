@@ -1,11 +1,12 @@
 header {
   // margin-top: 82px;
-  background-image: url(../../img/header-bg.png);
+  // background-image: url(../../img/header-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   min-height: 80vh;
   position: relative;
+
 
   .hamburger-close,
   .hamburger {
@@ -13,8 +14,25 @@ header {
     z-index: 10;
   }
 
+  .nav-wrapper {
+    background-color: $light;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+  }
+
   nav {
+    height: 80px;
     display: block;
+    // position: fixed;
+    // left: 100px;
+    top: 0;
+    width: 100%;
+    background-color: $light;
+    max-width: 1140px;
+    margin: 0 auto;
+
   }
 
   .container {
@@ -22,27 +40,15 @@ header {
     margin: 0;
     max-width: 1140px;
     margin: 0 auto;
+
+
   }
 
   .logo {
     margin-top: 10px;
     width: 80px;
     padding-left: 20px;
-    ;
-  }
-
-  .test {
-    // position: absolute;
-    // right: 0;
-    // top: 0;
-    // height: 80vh;
-    // border: 1px solid red;
-    // width: 50%;
-    // background-image: url(../../img/header-bg.png);
-    // background-repeat: no-repeat;
-    // background-size: contain;
-
-
+    margin-right: 50px;
   }
 
   .bg-image {
@@ -50,6 +56,21 @@ header {
     top: 200px;
     left: -40px;
     width: 11%;
+  }
+
+  .bg-image-right {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 10;
+    width: 40%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    // width: 11%;
   }
 
   nav {
@@ -60,13 +81,13 @@ header {
       display: flex;
       align-items: center;
       padding: 0;
-      margin-left: 0;
+      // margin-: 0;
 
       li {
         list-style: none;
         text-transform: uppercase;
         height: 50px;
-        padding: 20px 30px;
+        padding: 20px 20px;
         text-decoration: none;
         font-size: 1.06rem;
 
@@ -138,6 +159,7 @@ header {
 
 @media (max-width:$medium-device) {
   header {
+
     nav {
       display: none;
     }
@@ -148,6 +170,31 @@ header {
 
     .hamburger {
       display: block;
+    }
+  }
+}
+
+@media (max-width:$large-device) {
+  header {
+    min-height: 50vh;
+
+
+    nav {
+
+      justify-content: center;
+
+    }
+
+    .bg-image-right {
+      display: none;
+    }
+
+    .banner {
+      .banner-content {
+        text-align: center;
+        width: 100%;
+
+      }
     }
   }
 }

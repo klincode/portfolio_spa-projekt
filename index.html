@@ -14,13 +14,13 @@
     <!-- <div class="container"> -->
 
     <header>
-      <div class="container">
-        <a href="#"><img class="logo" src="./img/logo-txt.png" alt="SPA Logo"></a>
-        <div class="hamburger"><i class="fas fa-bars "></i></div>
-        <div class="hamburger-close"><i class="fas fa-times "></i></div>
-
+      <div class="bg-image-right">
+        <img src="../../img/header-bg.png" alt="" srcset="">
+      </div>
+      <!-- <div class="container"> -->
+      <div class="nav-wrapper">
         <nav>
-
+          <a href="#"><img class="logo" src="./img/logo-txt.png" alt="SPA Logo"></a>
           <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
@@ -29,7 +29,10 @@
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
+        <div class="hamburger"><i class="fas fa-bars "></i></div>
+        <div class="hamburger-close"><i class="fas fa-times "></i></div>
       </div>
+      <!-- </div> -->
 
       <img src="../../img/header-flowers.png" alt="bg image" class="bg-image">
 
@@ -206,7 +209,7 @@
 
       <div class="appointment-img"></div>
 
-      <div class="appointment-form">
+      <form class="appointment-form">
         <input type="text" name="name" placeholder="name">
         <input type="email" name="email" placeholder="email address">
         <select name="service">
@@ -220,7 +223,7 @@
         <input type="time" name="time">
         <textarea name="notes" placeholder="your notes"></textarea>
         <button type="submit" class="btn btn-rounded btn-negative">Make an appointment</button>
-      </div>
+      </form>
 
     </div>
   </div>
