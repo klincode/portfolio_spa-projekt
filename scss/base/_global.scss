@@ -54,5 +54,15 @@ section {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  // border: 1px solid red;
+}
+
+.visibility {
+  display: block;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.hidden {
+  display: none !important;
+  // border: 11px solid red;
 }
