@@ -681,6 +681,14 @@ header nav ul li a:hover {
   margin: 40px 0px;
 }
 
+.appointment .appointment-message-info {
+  color: red;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 992px) {
   .appointment .appointment-container .appointment-form {
     padding: 50px 10%;
@@ -957,6 +965,20 @@ select::placeholder {
   color: #fff;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill-selected,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  color: pink !important;
+  background-color: plum;
+}
+
 .hamburger,
 .hamburger-close {
   top: 20px;
@@ -977,5 +999,9 @@ select::placeholder {
 .hamburger-close {
   color: #fff;
   display: block;
+}
+
+.error {
+  border-bottom: 1px solid red;
 }
 /*# sourceMappingURL=main.css.map */
