@@ -66,3 +66,16 @@ section {
   display: none !important;
   // border: 11px solid red;
 }
+
+@media (max-width:$small-device) {
+  section {
+    padding: 30px 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0px 0;
+    padding: 0;
+  }
+
+}

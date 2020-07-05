@@ -20,7 +20,8 @@
     }
 
     .appointment-form {
-      min-width: 350px;
+      min-width: 320px;
+      // border: 1px solid red;
       width: 60%;
       display: flex;
       flex-wrap: wrap;
@@ -43,7 +44,6 @@
     color: red;
     flex-basis: 100%;
     display: none;
-    ;
     text-align: center;
     background-color: $light;
     padding: 5px 10px;
