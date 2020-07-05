@@ -57,7 +57,7 @@ section {
 }
 
 .visibility {
-  display: block;
+  display: block !important;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }

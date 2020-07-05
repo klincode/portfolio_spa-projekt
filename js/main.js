@@ -33,7 +33,11 @@ const sendDate = (data) => {
       body: JSON.stringify(data)
     })
     .then(res => res.json())
-    .then(res => messageInfo.textContent = res.messages[0])
+    .then(res => {
+      console.log(res);
+
+      messageInfo.textContent = `Dziękujemy ${res.appointment.name}. Zostałeś zapisany! `
+    })
     .catch(error => messageInfo.textContent = error)
 }
 
@@ -54,6 +58,8 @@ const formValidation = (e) => {
   clearErrorStyles();
 
   const addError = (pole) => {
+    console.log('eeeee');
+
     pole.classList.add('error');
     formErrors.push(pole.name);
   }
@@ -66,11 +72,11 @@ const formValidation = (e) => {
   if (time.value.trim() === '') addError(time)
   if (note.value.trim() === '') addError(note)
 
-  if (formErrors.length === 0) {
-    console.log('brak błędów');
-
+  if (formErrors.length > 0) {
     messageInfo.textContent = "Uzupełnij pola: "
     messageInfo.textContent += formErrors.join(',');
+    messageInfo.classList.add('visibility');
+  } else {
 
     let data = {
       name: name.value,
@@ -81,9 +87,10 @@ const formValidation = (e) => {
       time: time.value,
       message: note.value
     };
-
+    messageInfo.classList.add('visibility');
     sendDate(data);
     form.reset();
+    // messageInfo.classList.remove('visibility');
   }
 }
 

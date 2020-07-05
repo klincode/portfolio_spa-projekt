@@ -56,7 +56,7 @@ section {
 }
 
 .visibility {
-  display: block;
+  display: block !important;
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: -webkit-transform 0.3s ease-out;
@@ -685,8 +685,10 @@ header nav ul li a:hover {
   color: red;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  padding: 0;
-  margin: 0;
+  display: none;
+  text-align: center;
+  background-color: #fff;
+  padding: 5px 10px;
 }
 
 @media (max-width: 992px) {
