@@ -7,6 +7,8 @@ const form = document.querySelector(".appointment-form");
 const formFields = document.querySelectorAll(".appointment-form > *");
 const messageInfo = document.querySelector('.appointment-message-info');
 
+const nav = document.querySelector('.nav-wrapper')
+const about = document.querySelector('.about')
 //hamburger menu
 function showHideMenu() {
   if (navigationMenu.classList.contains('visibility')) {
@@ -94,4 +96,21 @@ const formValidation = (e) => {
   }
 }
 
+
+//scroll
+const scrollSpy = () => {
+  let y = window.scrollY;
+  // console.log(about);
+
+  console.log(about.scrollTop);
+
+  if (y > about.clientHeight) {
+    about.classList.add('show-section')
+  } else about.classList.remove('show-section')
+  // console.log(y);
+
+}
+
 form.addEventListener('submit', formValidation);
+
+window.addEventListener('scroll', scrollSpy);

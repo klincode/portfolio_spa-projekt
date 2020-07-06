@@ -69,6 +69,10 @@ section {
   display: none !important;
 }
 
+.show-section {
+  opacity: 1;
+}
+
 @media (max-width: 576px) {
   section {
     padding: 30px 10px;
