@@ -686,7 +686,7 @@ header nav ul li a:hover {
   position: absolute;
   left: 0;
   height: 100%;
-  background-image: url(./img/contact-bg.jpg);
+  background-image: url(../img/contact-bg.jpg);
   background-position: center;
   background-size: cover;
   width: 40%;
