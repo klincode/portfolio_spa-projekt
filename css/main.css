@@ -355,6 +355,10 @@ header nav ul li a:hover {
   padding: 32px 0;
 }
 
+.about p {
+  margin-bottom: 40px;
+}
+
 .contact {
   background-color: #1ba4ce;
   color: #fff;
