@@ -100,14 +100,12 @@ const formValidation = (e) => {
 //scroll
 const scrollSpy = () => {
   let y = window.scrollY;
-  // console.log(about);
+  console.log(y);
 
-  console.log(about.scrollTop);
-
-  if (y > about.clientHeight) {
+  if (y > about.scrollHeight - 300) {
     about.classList.add('show-section')
   } else about.classList.remove('show-section')
-  // console.log(y);
+
 
 }
 

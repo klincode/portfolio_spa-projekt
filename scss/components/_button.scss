@@ -4,7 +4,6 @@
   color: $light;
   padding: 15px 33px;
   text-decoration: none;
-  // font-weight: 700;
   outline: none;
   line-height: 12px;
   cursor: pointer;
@@ -56,8 +55,6 @@
   color: $secondary;
   background-color: $light;
   border: 1px solid transparent;
-
-
   transition: 0.3s;
 
   &:hover {
@@ -70,14 +67,11 @@
 @media (max-width:$small-device) {
   .btn {
     min-width: 100%;
-
   }
 
   .btn-rectangle {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-    ;
-    // color: red;
   }
 }

@@ -11,7 +11,6 @@ body,
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  // color: $dark;
 }
 
 p {
@@ -19,8 +18,11 @@ p {
   font-weight: 300;
   line-height: 1.8rem;
   padding: 20px 0;
-  // margin-block-start: 0;
-  // margin-block-end: 0;
+}
+
+.first-paragraph {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .banner,
@@ -35,7 +37,12 @@ h4 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.625rem;
+}
+
+h1 {
+  font-size: 3.125rem;
+
 }
 
 h4 {
@@ -64,12 +71,19 @@ section {
 
 .hidden {
   display: none !important;
-  // border: 11px solid red;
 }
 
 .show-section {
-  // box-shadow: 0 0 25px -15px rgba(51, 51, 51, 0.5);
-  opacity: 1;
+  opacity: 1 !important;
+  transition: 1s;
+
+}
+
+@media (max-width:$large-device) {
+  .first-paragraph {
+    width: 100%;
+  }
+
 }
 
 @media (max-width:$small-device) {
@@ -82,5 +96,4 @@ section {
     margin: 0px 0;
     padding: 0;
   }
-
 }

@@ -2,11 +2,9 @@
   background-color: $primary;
   position: relative;
 
-
   .appointment-container {
     max-width: 1140px;
     margin: 0 auto;
-
 
     .appointment-img {
       position: absolute;
@@ -16,12 +14,11 @@
       background-position: center;
       background-size: cover;
       width: 40%;
-
     }
 
     .appointment-form {
       min-width: 320px;
-      // border: 1px solid red;
+
       width: 60%;
       display: flex;
       flex-wrap: wrap;
@@ -33,9 +30,6 @@
         font-weight: 700;
         margin: 40px 0px;
       }
-
-
-
     }
 
   }
@@ -47,9 +41,6 @@
     text-align: center;
     background-color: $light;
     padding: 5px 10px;
-    // color: red;
-
-
   }
 }
 
@@ -69,7 +60,6 @@
         button {
           flex-basis: 50%;
           margin: 50px auto;
-
         }
       }
     }
@@ -80,4 +70,12 @@
       }
     }
   }
+}
+
+@media (max-width:$small-device) {
+  .appointment-message-info {
+    max-width: 300px;
+    font-size: 0.85rem;
+  }
+
 }

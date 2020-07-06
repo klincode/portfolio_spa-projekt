@@ -22,6 +22,11 @@ p {
   padding: 20px 0;
 }
 
+.first-paragraph {
+  margin: 0 auto;
+  width: 80%;
+}
+
 .banner,
 .about figcaption,
 h1,
@@ -34,7 +39,11 @@ h4 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.625rem;
+}
+
+h1 {
+  font-size: 3.125rem;
 }
 
 h4 {
@@ -70,7 +79,15 @@ section {
 }
 
 .show-section {
-  opacity: 1;
+  opacity: 1 !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 992px) {
+  .first-paragraph {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -190,7 +207,7 @@ header nav ul li a:hover {
 
 @media (max-width: 992px) {
   header {
-    height: 100vh;
+    height: 50vh;
     margin-bottom: 50px;
   }
   header .hamburger {
@@ -290,7 +307,6 @@ header nav ul li a:hover {
 .banner h1 {
   color: #1e2528;
   margin: 0;
-  font-size: 2.5rem;
 }
 
 .banner .play-icon {
@@ -406,7 +422,6 @@ header nav ul li a:hover {
 @media (max-width: 992px) {
   .contact .contact-form {
     min-width: 200px;
-    margin: 0;
     padding: 0;
   }
   .contact .contact-form address {
@@ -425,6 +440,7 @@ header nav ul li a:hover {
     padding-right: 0;
   }
   .contact .contact-form form {
+    margin: 0 auto;
     width: 70%;
   }
   .contact .contact-form form button {
@@ -723,6 +739,13 @@ header nav ul li a:hover {
   }
   .appointment .appointment-container .appointment-img {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .appointment-message-info {
+    max-width: 300px;
+    font-size: 0.85rem;
   }
 }
 
