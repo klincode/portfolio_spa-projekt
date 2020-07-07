@@ -109,6 +109,6 @@ const formValidation = (e) => {
 
 // }
 
-// form.addEventListener('submit', formValidation);
+form.addEventListener('submit', formValidation);
 
 // window.addEventListener('scroll', scrollSpy);
