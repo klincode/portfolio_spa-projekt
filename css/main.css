@@ -327,6 +327,12 @@ header nav ul li a:hover {
   border-color: #fff;
 }
 
+@media (max-width: 1200px) {
+  header {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 576px) {
   header .banner .banner-content {
     padding-bottom: 10px;
