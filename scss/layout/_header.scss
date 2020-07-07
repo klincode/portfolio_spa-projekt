@@ -97,6 +97,16 @@ header {
   }
 }
 
+@media (max-width:$extra-large-device) {
+  header {
+
+    .banner {
+      .banner-content {
+        padding: 20px 10px;
+      }
+    }
+  }
+}
 
 @media (max-width:$large-device) {
   header {

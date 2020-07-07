@@ -205,6 +205,12 @@ header nav ul li a:hover {
   color: #1ba4ce;
 }
 
+@media (max-width: 1200px) {
+  header .banner .banner-content {
+    padding: 20px 10px;
+  }
+}
+
 @media (max-width: 992px) {
   header {
     height: 50vh;
@@ -325,12 +331,6 @@ header nav ul li a:hover {
   background-color: #1ba4ce;
   color: #fff;
   border-color: #fff;
-}
-
-@media (max-width: 1200px) {
-  header {
-    padding: 20px;
-  }
 }
 
 @media (max-width: 576px) {
