@@ -98,17 +98,17 @@ const formValidation = (e) => {
 
 
 //scroll
-const scrollSpy = () => {
-  let y = window.scrollY;
-  console.log(y);
+// const scrollSpy = () => {
+//   let y = window.scrollY;
+//   console.log(y);
 
-  if (y > about.scrollHeight - 300) {
-    about.classList.add('show-section')
-  } else about.classList.remove('show-section')
+//   if (y > about.scrollHeight - 300) {
+//     about.classList.add('show-section')
+//   } else about.classList.remove('show-section')
 
 
-}
+// }
 
-form.addEventListener('submit', formValidation);
+// form.addEventListener('submit', formValidation);
 
-window.addEventListener('scroll', scrollSpy);
+// window.addEventListener('scroll', scrollSpy);
