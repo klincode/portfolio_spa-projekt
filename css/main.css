@@ -152,6 +152,7 @@ header .bg-image {
   top: 400px;
   left: -55px;
   width: 11%;
+  z-index: -1;
 }
 
 header .bg-image-right {
@@ -288,10 +289,6 @@ header nav ul li a:hover {
 }
 
 .banner .banner-content {
-  position: absolute;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   width: 55%;
   min-width: 320px;
   padding: 0 0px;
@@ -907,9 +904,9 @@ footer nav ul li a {
 }
 
 .btn-dark:hover {
-  background-color: #fff;
-  color: #555;
-  border: 1px solid #555;
+  background-color: #1ba4ce;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .btn-negative {

@@ -12,11 +12,11 @@ const about = document.querySelector('.about')
 //hamburger menu
 function showHideMenu() {
   if (navigationMenu.classList.contains('visibility')) {
-    console.log('ukryte');
+
     navigationMenu.classList.toggle('visibility');
     hamburger.classList.remove('hidden');
   } else {
-    console.log('widoczne');
+
     navigationMenu.classList.toggle('visibility');
     hamburger.classList.add('hidden');
   }
@@ -27,17 +27,15 @@ hamburgerClose.addEventListener('click', showHideMenu);
 //wyślij dane na serwer 
 const sendDate = (data) => {
   fetch('https://akademia108.pl/api/ajax/post-appointment.php', {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
     .then(res => res.json())
     .then(res => {
-      console.log(res);
-
       messageInfo.textContent = `Dziękujemy ${res.appointment.name}. Zostałeś zapisany! `
     })
     .catch(error => messageInfo.textContent = error)
@@ -60,8 +58,6 @@ const formValidation = (e) => {
   clearErrorStyles();
 
   const addError = (pole) => {
-    console.log('eeeee');
-
     pole.classList.add('error');
     formErrors.push(pole.name);
   }
@@ -92,7 +88,6 @@ const formValidation = (e) => {
     messageInfo.classList.add('visibility');
     sendDate(data);
     form.reset();
-    // messageInfo.classList.remove('visibility');
   }
 }
 

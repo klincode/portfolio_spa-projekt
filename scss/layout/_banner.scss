@@ -5,14 +5,11 @@
   }
 
   .banner-content {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
     width: 55%;
     min-width: 320px;
     padding: 0 0px;
     max-height: 350px;
-    ;
+
 
     p {
       width: 80%;
@@ -49,6 +46,7 @@
     border-color: $light;
 
   }
+
 }
 
 
