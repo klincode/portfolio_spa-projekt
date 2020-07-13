@@ -440,10 +440,15 @@ header nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contact .contact-form address p {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
     padding-right: 0;
   }
   .contact .contact-form form {
